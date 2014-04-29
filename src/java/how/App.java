@@ -1,5 +1,7 @@
 package how;
 
+import how.service.GreetingsService;
+
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
@@ -10,7 +12,7 @@ import org.apache.commons.cli.PosixParser;
  */
 public class App {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Options opts = new Options()
 			.addOption("f", "formal", false, "tipo de tratamento formal")
 			.addOption("v", "visitor-name", true, "nome do visitante");
