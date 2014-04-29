@@ -32,7 +32,7 @@ jar -cfm app.jar ./src/resources/manifest.txt -C bin/classes .
 ### Executando a aplicação
 cd dist
 
-java -jar bin/app.jar [options] <visitor-name>
+java -jar bin/app.jar [options] \<visitor-name\>
 
 Ex.: 
 
