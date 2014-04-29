@@ -34,7 +34,7 @@ jar -tf bin/app.jar
 
 	META-INF/
 		MANIFEST.MF
-	how
+	how/
 		Greetings.class
 		App.class
 		service/
