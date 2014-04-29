@@ -18,7 +18,9 @@ jar -cfm bin/app.jar ./src/resources/manifest.txt -C bin/classes .
 
 mkdir dist
 
-cp -R bin dist 
+mkdir dist/bin
+
+cp -R bin/app.jar dist/bin 
 
 cp -R libs dist 
 
