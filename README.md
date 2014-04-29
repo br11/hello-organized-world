@@ -24,7 +24,6 @@ cp -R bin/app.jar dist/bin
 
 cp -R libs dist 
 
-cp src/resources/run dist
 
 
 ### Empacotando a aplicação
