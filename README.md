@@ -31,7 +31,7 @@ jar -cfm app.jar ./src/resources/manifest.txt -C bin/classes .
 
 jar -tf bin/app.jar 
 
-'''
+
 	META-INF/
 		MANIFEST.MF
 	how
@@ -39,7 +39,7 @@ jar -tf bin/app.jar
 		App.class
 		service/
 			GreetingsService.class
-'''
+
 
 ### Executando a aplicação
 cd dist
