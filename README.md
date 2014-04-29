@@ -29,6 +29,18 @@ cp -R libs dist
 ### Empacotando a aplicação
 jar -cfm app.jar ./src/resources/manifest.txt -C bin/classes .
 
+jar -tf bin/app.jar 
+
+'''
+	META-INF/
+		MANIFEST.MF
+	how
+		Greetings.class
+		App.class
+		service/
+			GreetingsService.class
+'''
+
 ### Executando a aplicação
 cd dist
 
