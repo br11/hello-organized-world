@@ -29,6 +29,12 @@ cp src/resources/run dist
 jar -cfm app.jar ./src/resources/manifest.txt -C bin/classes .
 
 ### Executando a aplicação
+cd dist
+
 java -jar bin/app.jar [options] <visitor-name>
 
-Ex.: java -jar app.jar -fv Fulano
+Ex.: 
+
+cd dist
+
+java -jar bin/app.jar -fv Fulano
