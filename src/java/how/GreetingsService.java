@@ -1,4 +1,4 @@
-package how;
+package how.service;
 
 import java.util.Calendar;
 
@@ -7,7 +7,7 @@ import java.util.Calendar;
  */
 public class GreetingsService {
 
-    public String welcome(String visitorName) {
+    public String welcome(String visitorName, formal) {
 		int now = getHour();
 
 		String message;
@@ -19,7 +19,12 @@ public class GreetingsService {
 			message = Greetings.GOOD_NIGHT.getMessage();
 		}
 
-		String messageTemplate = message + ", %s";
+		String messageTemplate;
+		if (formal) {
+			messageTemplate = message + ", %s";
+		} else {
+			messageTemplate = message + ", Sr(a). %s";
+		}
 
 		return String.format(messageTemplate, visitorName);
 	}
